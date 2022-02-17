@@ -6,9 +6,6 @@ const Header = () => {
         <div className='logo'>
             <span className='logo_text'>Aplicacion de noticias</span>
         </div>
-        {/* <div className='menu'>
-            <span>Menu</span>
-        </div> */}
         <ul className = "list">
         <Link to="/home"><li>Inicio</li></Link>
         <Link to="/form"><li>Formulario</li></Link>
