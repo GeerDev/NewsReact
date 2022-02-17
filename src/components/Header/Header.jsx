@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <nav className = "navbar">
         <div className='logo'>
-            <span className='logo_text'>Bar Paquito</span>
+            <span className='logo_text'>Aplicacion de noticias</span>
         </div>
         {/* <div className='menu'>
             <span>Menu</span>
