@@ -19,6 +19,7 @@ export const GlobalProvider = ({ children }) => {
         type: "GET_NEWS",
         payload: res.data.results,
       });
+
     };
   
     return (

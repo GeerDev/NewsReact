@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { GlobalProvider } from "./context/GlobalState";
 import Home from './components/Home/Home'
 import Form from './components/Form/Form'
 import ListNews from './components/ListNews/ListNews'
@@ -9,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <GlobalProvider>
     <Router>
     <Header />
     <Routes>
@@ -20,7 +21,7 @@ function App() {
     </Routes>
     <Footer />
     </Router>
-    </>
+    </GlobalProvider>
   );
 }
 
