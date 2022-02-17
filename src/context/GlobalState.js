@@ -13,7 +13,7 @@ export const GlobalProvider = ({ children }) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
   
     const getNews = async () => {
-      const res = await axios.get("https://rickandmortyapi.com/api/character");
+      const res = await axios.get("https://api.nytimes.com/svc/topstories/v2/food.json?api-key=VLslSANKe2fXbThErESGpBMb6TUUV1fi");
 
       dispatch({
         type: "GET_NEWS",
