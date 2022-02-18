@@ -12,6 +12,7 @@ function App() {
   return (
     <GlobalProvider>
     <Router>
+    <div className='app'>
     <Header />
     <div className="container">
       <Routes>
@@ -22,6 +23,7 @@ function App() {
       </Routes>
     </div>
     <Footer />
+    </div>
     </Router>
     </GlobalProvider>
   );

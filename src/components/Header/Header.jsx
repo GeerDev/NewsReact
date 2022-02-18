@@ -2,12 +2,17 @@ import { Link } from "react-router-dom";
 
 import './Header.css';
 
+import logo from '../../assets/Logo.png'
+
 const Header = () => {
     return (
         <nav className = "navbar">
+        <Link to="/home">
         <div className='logo'>
-            <span className='logo_text'>Aplicacion de noticias de comida</span>
+            <img src={logo} alt="Logo Food News"/>
+            <span className='logo_text'>Food News</span>
         </div>
+        </Link>
         <ul className = "list">
         <Link to="/home"><li>Home</li></Link>
         <Link to="/form"><li>Form</li></Link>
