@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../../../context/GlobalState";
 
+import './Card.css';
+
 const Card = () => {
 
   const { news, getNews } = useContext(GlobalContext);
@@ -13,19 +15,30 @@ const Card = () => {
       window.location.replace(url)
   }
 
-  const event = news.map((event) => {
+  const event = news.map(({des_facet, ...event}) => {
     return (
-      <div key={event.title}>
-        <h1>{event.title}</h1>
-        <p>{event.abstract}</p>
-        <p>{event.byline}</p>
-        <pre>{event.des_facet}</pre>
-        <ul>
-          <li>{event.org_facet}</li>
-          <li>{event.geo_facet}</li>
-        </ul>
+      <div key={event.title} className="card animate__animated animate__backInLeft">
         <img src={event.multimedia[1].url} alt={event.multimedia[1].caption}/>
-        <button onClick={()=> externalLink (event.short_url) }>Go to the website</button>
+        <div className="card_content">
+          <h1>{event.title}</h1>
+          <p>{event.abstract}</p>
+          <p><i>{event.byline}</i></p>
+          <div className="card_atribbutes">
+          {
+            des_facet ? des_facet.map((elem,idx) => (
+                <span key={idx} className="card_element">#{elem}</span>
+              ))
+            : null
+          }
+          </div>
+          {
+            event.org_facet ? (<p>{event.org_facet}</p>) : null
+          }
+          {
+            event.geo_facet ? (<p>{event.geo_facet}</p>) : null
+          } 
+          <button onClick={()=> externalLink (event.short_url) }>Go to the website</button>
+        </div>
       </div>
     );
   });

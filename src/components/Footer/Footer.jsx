@@ -1,6 +1,10 @@
+import './Footer.css';
+
 const Footer = () => {
     return (
-      <div>Footer</div>
+      <div className="footer">© 2022 Copyright: 
+        <a href="https://github.com/GeerDev">  Visita GeerDev Github</a>
+      </div>
     )
   }
   

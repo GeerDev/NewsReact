@@ -22,7 +22,7 @@ const Form = () => {
         localStorage.setItem("dataForm", JSON.stringify(data))
 
         setTimeout(() => {
-            navigate("/");
+            navigate("/list");
           }, 1000);
       };
     

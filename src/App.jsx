@@ -13,12 +13,14 @@ function App() {
     <GlobalProvider>
     <Router>
     <Header />
-    <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/list" element={<ListNews />} />   
-    </Routes>
+    <div className="container">
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/form" element={<Form />} />
+          <Route path="/list" element={<ListNews />} />   
+      </Routes>
+    </div>
     <Footer />
     </Router>
     </GlobalProvider>
