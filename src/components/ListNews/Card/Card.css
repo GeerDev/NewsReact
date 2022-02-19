@@ -2,9 +2,10 @@
     display: flex;
     width: 1000px;
     font-family: 'Poppins', sans-serif;
-    border: 1px solid #222;
+    box-shadow: 8px 3px 3px black;
     border-radius: 2em;
     margin-bottom: 2em;
+    background-color: white;
 }
 
 .card img {
@@ -34,7 +35,8 @@
 }
 
 .card_content button:hover {
-    background-color: #DAE0F2;  
+    background-color: #DAE0F2; 
+    border: 2px solid #DAE0F2; 
     color:#222;
     cursor: pointer;
     transform: scale(1.1);

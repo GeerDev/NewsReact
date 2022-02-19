@@ -26,7 +26,7 @@ const Card = () => {
           <div className="card_atribbutes">
           {
             des_facet ? des_facet.map((elem,idx) => (
-                <span key={idx} className="card_element">#{elem}</span>
+                <span key={idx} className="card_element animate__animated animate__bounce">#{elem}</span>
               ))
             : null
           }
