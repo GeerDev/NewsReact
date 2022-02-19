@@ -41,6 +41,10 @@
     overflow: hidden;
 }
 
+.list li:hover {
+    color: #F9CFF2;
+}
+
 .list li:before,
 .list li:after {
     content: "";
@@ -64,7 +68,6 @@
 
 .list li:hover::before,
 .list li:hover::after {
-    color: #F9CFF2;
     transform: translateX(0);
     overflow: hidden;
 }
