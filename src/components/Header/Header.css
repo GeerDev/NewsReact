@@ -72,6 +72,35 @@
     overflow: hidden;
 }
 
-@media (max-width: 600px){
+.menu-btn {
+    font-size: 1.3em;
+    display: none;
+}
 
+@media (max-width: 700px){
+    .menu-btn {
+        font-size: 1.3em;
+        cursor: pointer;
+        display: block;
+    }
+
+    .list {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #111344;
+        text-align: center;
+        padding-top: 60px;
+        z-index: 998;
+        transition: all 0.3s ease;
+    }
+
+    .list_active {
+        left: 0;
+    }
 }
