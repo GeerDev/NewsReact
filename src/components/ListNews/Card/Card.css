@@ -73,7 +73,7 @@
     border-radius: 2em;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1200px){
     .card:nth-child(even),
     .card:nth-child(odd) {
         flex-direction: column;
@@ -91,7 +91,7 @@
     }
 }
 
-@media (max-width: 630px){
+@media (max-width: 750px){
     .card:nth-child(even),
     .card:nth-child(odd) {   
         width: 330px;
