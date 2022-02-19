@@ -19,13 +19,16 @@
     background-color: white;
 }
 
+.card:last-child {
+    margin-bottom: 4em;
+}
+
 .card img {
     width: 45%;
     border-radius: 1em 0 0 1em;
 }
 
-.card img:nth-child(odd) {
-    width: 45%;
+.card:nth-child(odd) img {
     border-radius: 0 1em 1em 0;
 }
 
@@ -68,4 +71,38 @@
     background-color: #F9CFF2;
     padding: 0.3em;
     border-radius: 2em;
+}
+
+@media (max-width: 1000px){
+    .card:nth-child(even),
+    .card:nth-child(odd) {
+        flex-direction: column;
+        width: 600px;
+    }
+
+    .card img,
+    .card:nth-child(odd) img {
+        width: 100%;
+        border-radius: 1em 1em 0 0;
+    }
+
+    .card_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px){
+    .card:nth-child(even),
+    .card:nth-child(odd) {   
+        width: 330px;
+    }
+
+    .card_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card_atribbutes {
+        justify-content: center;
+    }
 }
