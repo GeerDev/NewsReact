@@ -42,7 +42,7 @@ const Card = () => {
       </div>
     );
   });
-  return <div>{event}</div>;
+  return <div>{event}</div>
   }
   
   export default Card

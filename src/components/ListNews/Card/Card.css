@@ -1,5 +1,16 @@
-.card {
+.card:nth-child(even) {
     display: flex;
+    width: 1000px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 8px 3px 3px rgb(49, 49, 49);
+    border-radius: 2em;
+    margin-bottom: 2em;
+    background-color: white;
+}
+
+.card:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
     width: 1000px;
     font-family: 'Poppins', sans-serif;
     box-shadow: 8px 3px 3px rgb(49, 49, 49);
@@ -11,6 +22,11 @@
 .card img {
     width: 45%;
     border-radius: 1em 0 0 1em;
+}
+
+.card img:nth-child(odd) {
+    width: 45%;
+    border-radius: 0 1em 1em 0;
 }
 
 .card_content {
