@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { GlobalContext } from "../../../context/GlobalState";
 
-import './Card.css';
+import './Card.scss';
 
 const Card = () => {
 
