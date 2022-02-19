@@ -72,12 +72,14 @@ const Form = () => {
               onChange={handleInputChange}
               name="place"
             />
+            <div className="file-select">
             <input
               type="file"
               placeholder="Add a image"
               onChange={handleInputChange}
               name="image"
             />
+            </div>
           </div>
           <div className="form_hastags">
             <input

@@ -15,6 +15,10 @@ const Header = () => {
         setOpen(!open)
     }    
 
+    const handleCLickTrue = () => {
+        setOpen(true)
+    }    
+
     return (
         <nav className = "navbar">
         <Link to="/home">
@@ -27,9 +31,9 @@ const Header = () => {
                 <FontAwesomeIcon icon={faBurger} onClick={handleCLick}/>
         </div>
         <ul className = {`${open ? "list" : "list list_active"}`}>
-        <Link to="/home"><li onClick={handleCLick}>Home</li></Link>
-        <Link to="/form"><li onClick={handleCLick}>Form</li></Link>
-        <Link to="/list"><li onClick={handleCLick}>News</li></Link>
+        <Link to="/home"><li onClick={handleCLickTrue}>Home</li></Link>
+        <Link to="/form"><li onClick={handleCLickTrue}>Form</li></Link>
+        <Link to="/list"><li onClick={handleCLickTrue}>News</li></Link>
         </ul>
     </nav>
     )
