@@ -4,23 +4,45 @@
     align-items: center;
     justify-content: center;
     font-family: 'Ubuntu', 'sans-serif';
-    color: white;
+    color: #DAE0F2;
+}
+
+.home img {
+    filter: invert(1);
+    width: 400px;
+    height: 350px;
 }
 
 .home h1 {
     font-size: 3.5em;
     font-weight: 700;
-    margin: 0 0 0.5em 0;
+    margin: -30px 0 0.5em 0;
 }
 
-.home h1 span {
-    color: #111344;
+.typewriter {
+    display: inline-flex;
+    color: white;
+    white-space: nowrap;
+    font-family: monospace;
+    letter-spacing:0;
+    border-right: 4px solid;
+    width: 9.2ch;
+    animation: typing 3s steps(9), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
 }
 
 .home p {
     font-size: 2em;
     margin: 0 0 0.5em 0;
-    color: #111344;
+    color: white;
 }
 
 .home button {
