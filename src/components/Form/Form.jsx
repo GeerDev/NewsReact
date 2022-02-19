@@ -7,27 +7,35 @@ const Form = () => {
 
   let navigate = useNavigate();
 
+  const [array, setArray] = useState([])
+
   const [data, setData] = useState({
         name: "",
         title: "",
         description: "",
         place: "",
-        image: "",
-        hastags: []
+        image: ""
       });
 
   const handleInputChange = (event) => {
         setData({
-          ...data,
+          ...data, 
           [event.target.name]: event.target.value
         });
       };
+
+  const handleArray = () => {
+        const hastag = document.getElementById('hastags')
+        setArray([...array, hastag.value])
+        hastag.value = ''
+      } 
 
   const handleSubmit = (event) => {
         event.preventDefault();
 
         let save = JSON.parse(localStorage.getItem('dataForm')) || [];
-        save.push(data)
+        const dataForm = {...data, hastags:array}
+        save.push(dataForm)
         localStorage.setItem("dataForm", JSON.stringify(save))
 
         setTimeout(() => {
@@ -71,13 +79,22 @@ const Form = () => {
               name="image"
             />
           </div>
-          <input
-            type="text"
-            placeholder="Hastags"
-            onChange={handleInputChange}
-            name="hastags"
-            className="hastags"
-          />
+          <div className="form_hastags">
+            <input
+              type="text"
+              placeholder="#Hastags"
+              id="hastags"
+              className="hastags"
+            />
+            <button type="button" onClick={handleArray}>Add hastag</button>
+          </div>
+          <div className='list_hastags'>
+              {array.map((elem,idx) => (
+              <div className='animate__animated animate__zoomIn '>
+                <p className='element_hastags' key={idx}>#{elem}</p>
+              </div>
+              ))}
+          </div>
           <button type="submit">Send</button>
       </form>
       <div className="form_ilustration">
