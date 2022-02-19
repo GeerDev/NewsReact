@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const Header = () => {
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(true)
 
     const handleCLick = () => {
         setOpen(!open)

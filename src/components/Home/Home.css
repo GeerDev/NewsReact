@@ -17,6 +17,7 @@
     font-size: 3.5em;
     font-weight: 700;
     margin: -30px 0 0.5em 0;
+    text-align: center;
 }
 
 .typewriter {
@@ -43,6 +44,7 @@
     font-size: 2em;
     margin: 0 0 0.5em 0;
     color: white;
+    text-align: center;
 }
 
 .home button {
@@ -63,4 +65,15 @@
     color:#222;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media (max-width: 400px){
+    .home h1 {
+        font-size: 3em;
+    }
+
+    .home p {
+        font-size: 1.5em;
+        margin:0 2em;
+    }
 }
