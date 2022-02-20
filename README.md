@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Red Social
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Emularemos el comportamiento de una red social utilizando MongoDB, Mongoose y NodeJS_
 
-## Available Scripts
+## Un proyecto hecho con React 🚀
 
-In the project directory, you can run:
+El proyecto ha sido desarrollado utilizando las siguientes paquetes en Nodejs:
 
-### `npm start`
+* Expresss
+* Nodemon
+* Bcryptjs
+* Jsonwebtoken
+* Multer
+* Dotenv
+* Nodemailer
+* Mongoose
+* Swagger-ui-express
+  
+## ¿Como desplegar el proyecto? 📋
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clonarte el repositorio localmente:
+> git clone url del repositorio
 
-### `npm test`
+Instalar las depedencias necesarias:
+> npm i
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Rellenar las variables necesarias en estos archivos para iniciar el proyecto:
 
-### `npm run build`
+> - .env.example:
+>   -  Puerto en el que quieras que se ejecute el server
+>   -  Jwt_secret para la utilización de jsonwebtoken en la autenticación del usuario
+>   -  Cadena de conexión con la base de datos en Mongo Atlas, MONGODB_ATLAS
+>   -  Usuario y contraseña del servidor de correo utilizado en Nodemailer para el envio de correos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+😊 Genial ya tenemos todo listo para poder llamar a los endpoints, ya podemos recibir y modificar datos 😊
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Interfaces y funcionalidades de la aplicación
 
-### `npm run eject`
+## Navegación dentro de la aplicación
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📌 Organización a la hora de trabajar en este proyecto 📌
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+El proyecto consta de dos ramas: main y develop, las distintas funcionalidades del proyecto se han implementado en distintas ramas que posteriormente se han fusionado con la rama develop que es la encargada de actualizar todo el trabajo de desarrollo. Finalmente cuando tengamos versiones estables de la rama develop la fusionamos con la rama main, la encargada de mostrar nuestro Back-End en producción.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
+Hecho por [Germán Fernández](https://github.com/GeerDev) 😊 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
