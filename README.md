@@ -1,20 +1,18 @@
-# Red Social
+# Aplicación de noticias sobre comida
 
-_Emularemos el comportamiento de una red social utilizando MongoDB, Mongoose y NodeJS_
+_Una aplicación hecha con React donde se muestran noticias relacionadas con comida_
 
 ## Un proyecto hecho con React 🚀
 
-El proyecto ha sido desarrollado utilizando las siguientes paquetes en Nodejs:
+En el proyecto utilizamos distintas funcionalidades que nos proporciona React:
 
-* Expresss
-* Nodemon
-* Bcryptjs
-* Jsonwebtoken
-* Multer
-* Dotenv
-* Nodemailer
-* Mongoose
-* Swagger-ui-express
+* Descomposición en componentes de React
+* React Routing
+* Uso de hooks, como useState, useEffect, useReducer, useContext
+* Manejo de formularios en React
+* Gestión del ciclo de vida de los componentes en React
+* Uso de Context para hacer la llamada a la API de noticias
+* Uso de Sass dentro de React
   
 ## ¿Como desplegar el proyecto? 📋
 
@@ -26,20 +24,14 @@ Clonarte el repositorio localmente:
 Instalar las depedencias necesarias:
 > npm i
 
-Rellenar las variables necesarias en estos archivos para iniciar el proyecto:
+Ejecutar el script para iniciar el proyecto:
 
-> - .env.example:
->   -  Puerto en el que quieras que se ejecute el server
->   -  Jwt_secret para la utilización de jsonwebtoken en la autenticación del usuario
->   -  Cadena de conexión con la base de datos en Mongo Atlas, MONGODB_ATLAS
->   -  Usuario y contraseña del servidor de correo utilizado en Nodemailer para el envio de correos
+> npm start
 
-
-😊 Genial ya tenemos todo listo para poder llamar a los endpoints, ya podemos recibir y modificar datos 😊
+😊 Genial ya tenemos todo listo para ver nuestra aplicación en desarrollo 😊
 
 ## Interfaces y funcionalidades de la aplicación
 
-## Navegación dentro de la aplicación
 
 ## 📌 Organización a la hora de trabajar en este proyecto 📌
 
