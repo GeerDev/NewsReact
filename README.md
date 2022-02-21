@@ -2,6 +2,8 @@
 
 _Una aplicación hecha con React donde se muestran noticias relacionadas con comida_
 
+![foto](./images_github/portada.png) 
+
 ## Un proyecto hecho con React 🚀
 
 En el proyecto utilizamos distintas funcionalidades que nos proporciona React:
@@ -31,6 +33,24 @@ Ejecutar el script para iniciar el proyecto:
 😊 Genial ya tenemos todo listo para ver nuestra aplicación en desarrollo 😊
 
 ## Interfaces y funcionalidades de la aplicación
+- Pantalla Home donde se muestra una portada con el logo y una descripción de nuestra aplicación. Además tiene un boton para navegar a la parte del formulario de nuestra aplicación.
+
+![foto](./images_github/home.png) 
+
+- Pantalla Form, muestra un formulario para rellenar una noticia y poder insertala en la lista de noticias, actualmente la noticia la guardamos en LocalStorage.
+
+![foto](./images_github/form.png) 
+
+- Pantalla News, muestra la lista con todas las noticias sobre comida que tenemos disponible a día de hoy.
+
+![foto](./images_github/news.png) 
+
+Todo el diseño es responsive y además disponemos de un menú hamburguesa en la vista para móvil donde disponemos de los botones de navegación.
+    <div align="center">
+        ![foto](./images_github/responsive1.png)
+        ![foto](./images_github/responsive2.png)  
+    </div>
+
 
 
 ## 📌 Organización a la hora de trabajar en este proyecto 📌
