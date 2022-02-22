@@ -51,11 +51,9 @@ Todo el diseño es responsive y además disponemos de un menú hamburguesa en la
         ![foto](./src/images_github/responsive2.png)  
     </div>
 
-
-
 ## 📌 Organización a la hora de trabajar en este proyecto 📌
 
-El proyecto consta de dos ramas: main y develop, las distintas funcionalidades del proyecto se han implementado en distintas ramas que posteriormente se han fusionado con la rama develop que es la encargada de actualizar todo el trabajo de desarrollo. Finalmente cuando tengamos versiones estables de la rama develop la fusionamos con la rama main, la encargada de mostrar nuestro Back-End en producción.
+El proyecto consta de dos ramas: main y develop, las distintas funcionalidades del proyecto se han implementado en distintas ramas que posteriormente se han fusionado con la rama develop que es la encargada de actualizar todo el trabajo de desarrollo. Finalmente cuando tengamos versiones estables de la rama develop la fusionamos con la rama main, la encargada de mostrar nuestro Front-End en producción.
 
 ---
 Hecho por [Germán Fernández](https://github.com/GeerDev) 😊 
